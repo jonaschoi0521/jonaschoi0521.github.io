@@ -33,7 +33,7 @@ Live at https://yuhyunchoi0521.github.io
 If the repo hasn't been connected to GitHub yet:
 
 1. Create the repo at https://github.com/new — name it exactly **`yuhyunchoi0521.github.io`**, set to **Public**.
-2. In the repo Settings → Pages → Source: select **GitHub Actions**.
+2. In the repo Settings → Pages → Source: **Deploy from a branch** → branch: `gh-pages`, folder: `/ (root)`.
 3. Push the local repo:
    ```
    git remote add origin https://github.com/yuhyunchoi0521/yuhyunchoi0521.github.io.git
