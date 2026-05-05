@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="index-intro">
+  <h1>{{ site_title }}</h1>
+  <p>{{ site_intro }}</p>
+</section>
+
+<ul class="posts">
+  {% for post in posts %}
+  <li>
+    <a class="post-title" href="{{ post.slug }}.html">{{ post.title }}</a>
+    <div class="meta">{{ post.date_display }}</div>
+    {% if post.summary %}<p class="summary">{{ post.summary }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

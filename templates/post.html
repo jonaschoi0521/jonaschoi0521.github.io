@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}{{ post.title }} &middot; {{ site_title }}{% endblock %}
+
+{% block content %}
+<article class="post">
+  <header>
+    <div class="dateline">{{ post.date_display }}</div>
+    <h1>{{ post.title }}</h1>
+  </header>
+  <div class="body">
+    {{ post.body_html | safe }}
+  </div>
+  <a class="back" href="index.html">&larr; All posts</a>
+</article>
+{% endblock %}

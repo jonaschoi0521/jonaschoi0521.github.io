@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ site_title }}{% endblock %}</title>
+  {% if description %}<meta name="description" content="{{ description }}">{% endif %}
+  <link rel="stylesheet" href="{{ static_prefix }}static/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <div class="row">
+        <a class="title" href="{{ static_prefix }}index.html">{{ site_title }}</a>
+        <nav><a href="{{ static_prefix }}index.html">Posts</a></nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      {{ site_byline }} &middot; &copy; {{ year }}
+    </div>
+  </footer>
+</body>
+</html>
