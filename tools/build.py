@@ -33,12 +33,12 @@ TEMPLATES_DIR = ROOT / "templates"
 STATIC_DIR = ROOT / "static"
 SITE_DIR = ROOT / "site"
 
-SITE_TITLE = "Yuhyun Choi"
+SITE_TITLE = "Jonas Choi"
 SITE_INTRO = (
     "Notes on career, future direction, and how the work I do "
     "can be in service of others."
 )
-SITE_BYLINE = "Written by Yuhyun Choi"
+SITE_BYLINE = "Written by Jonas Choi"
 
 FILENAME_RE = re.compile(r"^(\d{4}[-.](\d{2})[-.](\d{2}))(?:[-.](.+))?$")
 H1_RE = re.compile(r"^#\s+(.+?)\s*$", re.MULTILINE)
