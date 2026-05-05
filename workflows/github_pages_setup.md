@@ -18,19 +18,19 @@ Ubuntu runner: pip install markdown jinja2 → python3 tools/build.py
     ↓
 peaceiris/actions-gh-pages@v3 pushes site/ to gh-pages branch
     ↓
-GitHub Pages serves gh-pages branch → https://yuhyunchoi0521.github.io
+GitHub Pages serves gh-pages branch → https://jonaschoi0521.github.io
 ```
 
 ## What's installed and configured
 
 **GitHub:**
-- Repo: `yuhyunchoi0521/yuhyunchoi0521.github.io` (public)
+- Repo: `jonaschoi0521/jonaschoi0521.github.io` (public)
 - Pages: Settings → Pages → Source: **Deploy from a branch** → branch: `gh-pages`, folder: `/ (root)`
 - SSH key: `~/.ssh/id_ed25519` added to https://github.com/settings/ssh (title: MacBook)
 
 **Git remote:**
 - Protocol: SSH (not HTTPS)
-- Remote: `git@github.com:yuhyunchoi0521/yuhyunchoi0521.github.io.git`
+- Remote: `git@github.com:jonaschoi0521/jonaschoi0521.github.io.git`
 - Why SSH: HTTPS personal access tokens require `workflow` scope to push Actions files, which caused repeated auth failures during setup.
 
 **GitHub Actions:**
@@ -58,8 +58,8 @@ Install manually: download `main.js`, `manifest.json`, `styles.css` from the Git
 
 1. Write or edit a file in `posts/` in Obsidian
 2. Wait ~5 minutes
-3. Check https://github.com/yuhyunchoi0521/yuhyunchoi0521.github.io/actions — should show a green run
-4. Visit https://yuhyunchoi0521.github.io — post should be live
+3. Check https://github.com/jonaschoi0521/jonaschoi0521.github.io/actions — should show a green run
+4. Visit https://jonaschoi0521.github.io — post should be live
 
 Or trigger immediately: Obsidian command palette (Cmd+P) → **Git: Commit all changes** → **Git: Push**
 

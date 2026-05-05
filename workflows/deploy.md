@@ -10,7 +10,7 @@ Get the built `site/` folder onto the public internet.
 
 The blog is connected to GitHub. Every time you push a commit (or Obsidian Git does it automatically), GitHub Actions builds the site and deploys it. Zero manual steps.
 
-**Live URL:** https://yuhyunchoi0521.github.io
+**Live URL:** https://jonaschoi0521.github.io
 
 ### How it works
 
@@ -25,21 +25,21 @@ Runs: pip install markdown jinja2 && python3 tools/build.py
     ↓
 Deploys site/ to GitHub Pages automatically
     ↓
-Live at https://yuhyunchoi0521.github.io
+Live at https://jonaschoi0521.github.io
 ```
 
 ### First-time GitHub setup (one-time only)
 
 If the repo hasn't been connected to GitHub yet:
 
-1. Create the repo at https://github.com/new — name it exactly **`yuhyunchoi0521.github.io`**, set to **Public**.
+1. Create the repo at https://github.com/new — name it exactly **`jonaschoi0521.github.io`**, set to **Public**.
 2. In the repo Settings → Pages → Source: **Deploy from a branch** → branch: `gh-pages`, folder: `/ (root)`.
 3. Push the local repo:
    ```
-   git remote add origin https://github.com/yuhyunchoi0521/yuhyunchoi0521.github.io.git
+   git remote add origin https://github.com/jonaschoi0521/jonaschoi0521.github.io.git
    git push -u origin main
    ```
-4. Watch the Actions tab at https://github.com/yuhyunchoi0521/yuhyunchoi0521.github.io/actions — first build takes ~1 min.
+4. Watch the Actions tab at https://github.com/jonaschoi0521/jonaschoi0521.github.io/actions — first build takes ~1 min.
 
 ### Obsidian Git setup (one-time only)
 

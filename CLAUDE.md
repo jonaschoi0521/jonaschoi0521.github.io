@@ -19,7 +19,7 @@ The **writing** is the product. Everything else (build pipeline, design, hosting
 **Fully automated (default):**
 1. Write `posts/YYYY-MM-DD.md` in Obsidian — `# Title` on line 1, body below
 2. Save. Obsidian Git auto-pushes to GitHub within ~5 minutes.
-3. GitHub Actions builds and deploys automatically → live at **https://yuhyunchoi0521.github.io**
+3. GitHub Actions builds and deploys automatically → live at **https://jonaschoi0521.github.io**
 
 **Manual fallback:**
 - Run `python3 tools/build.py` then drag `site/` to Netlify → **https://yuhyunchoi0521.netlify.app**
@@ -29,7 +29,7 @@ The **writing** is the product. Everything else (build pipeline, design, hosting
 - **Source**: markdown files in `posts/` named `YYYY-MM-DD.md` or `YYYY.MM.DD.md` (dots or dashes both work). No frontmatter. Date from filename. Title from first `# H1` in the body (if absent, formatted date is used).
 - **Build**: `tools/build.py` — markdown + Jinja2 → static HTML in `site/`
 - **Design**: hand-tuned CSS in `static/style.css`. No frameworks, no Tailwind, no JS.
-- **Deploy**: auto via GitHub Actions on every push → **live at https://yuhyunchoi0521.github.io** (see [workflows/deploy.md](workflows/deploy.md)). Netlify (https://yuhyunchoi0521.netlify.app) kept as manual fallback.
+- **Deploy**: auto via GitHub Actions on every push → **live at https://jonaschoi0521.github.io** (see [workflows/deploy.md](workflows/deploy.md)). Netlify (https://yuhyunchoi0521.netlify.app) kept as manual fallback.
 
 ## Design — locked
 
@@ -61,8 +61,8 @@ If the user asks for a "redesign," edit `static/style.css` directly. Do not rege
 
 ## Automation Infrastructure
 
-- **GitHub repo:** `yuhyunchoi0521/yuhyunchoi0521.github.io` (public)
-- **Live URL:** https://yuhyunchoi0521.github.io
+- **GitHub repo:** `jonaschoi0521/jonaschoi0521.github.io` (public)
+- **Live URL:** https://jonaschoi0521.github.io
 - **Git auth:** SSH (`~/.ssh/id_ed25519` — added to GitHub account)
 - **Deploy action:** `peaceiris/actions-gh-pages@v3` → pushes `site/` to `gh-pages` branch
 - **Pages source:** Deploy from branch → `gh-pages`, `/ (root)`
@@ -88,5 +88,5 @@ site/                           # build output — gitignored, regeneratable
 - [x] Phase A — Foundations (scaffold: CLAUDE.md, structure, build pipeline)
 - [x] Phase B — First post written and tested
 - [x] Phase C — Live at https://yuhyunchoi0521.netlify.app (Netlify, manual)
-- [x] Phase D — Fully automated: Obsidian Git → GitHub → GitHub Actions → https://yuhyunchoi0521.github.io
+- [x] Phase D — Fully automated: Obsidian Git → GitHub → GitHub Actions → https://jonaschoi0521.github.io
 - [ ] Phase E — Optional polish (RSS, tags, dark mode — only if user asks)
