@@ -59,6 +59,16 @@ If the user asks for a "redesign," edit `static/style.css` directly. Do not rege
 
 6. **Don't add features the user didn't ask for.** v0 is intentionally minimal: posts, index, no tags, no search, no RSS, no dark mode. Add them only on request.
 
+## Automation Infrastructure
+
+- **GitHub repo:** `yuhyunchoi0521/yuhyunchoi0521.github.io` (public)
+- **Live URL:** https://yuhyunchoi0521.github.io
+- **Git auth:** SSH (`~/.ssh/id_ed25519` — added to GitHub account)
+- **Deploy action:** `peaceiris/actions-gh-pages@v3` → pushes `site/` to `gh-pages` branch
+- **Pages source:** Deploy from branch → `gh-pages`, `/ (root)`
+- **Obsidian Git:** auto-commit + push every 5 min from the blog vault
+- **Full setup notes:** [workflows/github_pages_setup.md](workflows/github_pages_setup.md)
+
 ## File Layout
 
 ```
@@ -67,8 +77,10 @@ templates/                      # Jinja2 HTML templates (base, index, post)
 static/                         # style.css and any assets
 tools/                          # build.py, new_post.py, serve.py
 workflows/                      # SOPs for writing, design tweaks, deploy
+.github/workflows/              # GitHub Actions pipeline
 site/                           # build output — gitignored, regeneratable
 .tmp/                           # disposable scratch
+.obsidian/                      # Obsidian vault config + Git plugin
 ```
 
 ## Phase Status
