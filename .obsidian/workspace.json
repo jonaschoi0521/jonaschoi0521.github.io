@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9f7dc9df2f5d8197",
+        "id": "944f6dd2d47e97cb",
         "type": "tabs",
         "children": [
           {
-            "id": "3e90867326a37357",
+            "id": "f627036182e7bd15",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/2026.05.07.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026.05.07"
+              "title": "New tab"
             }
           }
         ]
@@ -181,12 +177,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3e90867326a37357",
+  "active": "f627036182e7bd15",
   "lastOpenFiles": [
-    "posts/2026.05.06.md",
     "posts/2026.05.07.md",
-    "posts/2026.05.05.md",
     "posts/2026.05.04.md",
+    "posts/2026.05.06.md",
+    "posts/2026.05.05.md",
     "posts/2026.05.05_2.md",
     "workflows/github_pages_setup.md"
   ]
